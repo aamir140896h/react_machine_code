@@ -9,6 +9,8 @@ import ProtectedRoutes from "./protectedcomponent/ProtectedRoutes";
 import Dashboard from "./protectedcomponent/pages/Dashboard";
 import Home from "./lazyloading/Home";
 import DynamicFormValidation from "./dynamicForm/DynamicFormValidation";
+import MainPage from "./stepper/MainPage";
+import TabMain from "./tabs/TabMain";
 
 const About = lazy(() => import("./lazyloading/About"));
 
@@ -101,7 +103,9 @@ function App() {
       </BrowserRouter> */}
 
       {/* form validation */}
-      <DynamicFormValidation />
+      {/* <DynamicFormValidation /> */}
+      {/* <MainPage /> */}
+      <TabMain />
     </>
   );
 }
